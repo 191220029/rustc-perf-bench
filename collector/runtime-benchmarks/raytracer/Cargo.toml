@@ -6,6 +6,6 @@ edition = "2021"
 
 [dependencies]
 lodepng = "0.10"
-benchlib = { path = "../../benchlib" }
+benchlib = { path = "./benchlib" }
 
 [workspace]
