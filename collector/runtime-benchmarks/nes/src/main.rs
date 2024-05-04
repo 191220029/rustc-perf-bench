@@ -17,7 +17,7 @@ impl nes::Context for Emulator {
 
 // Source of the ROM: https://github.com/christopherpow/nes-test-roms/tree/97720008e51db15dd281a2a1e64d4c65cf1bca4c/nes15-1.0.0
 // Licensed under a BSD-style license.
-const ROM: &[u8] = include_bytes!("../../data/nes15-NTSC.nes");
+const ROM: &[u8] = include_bytes!("nes15-NTSC.nes");
 
 fn main() {
     use nes::Interface;

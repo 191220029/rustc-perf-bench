@@ -5,7 +5,7 @@ use brotli::enc::BrotliEncoderParams;
 use benchlib::benchmark::run_benchmark_group;
 use benchlib::decompress_file;
 
-const TEXT_SHERLOCK: &[u8] = include_bytes!("../../data/sherlock.txt.gz");
+const TEXT_SHERLOCK: &[u8] = include_bytes!("sherlock.txt.gz");
 
 fn compress(data: &str) -> Vec<u8> {
     let mut target: Vec<u8> = Vec::with_capacity(1024 * 1024);

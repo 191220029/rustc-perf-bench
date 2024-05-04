@@ -3,7 +3,7 @@ use regex::Regex;
 use benchlib::benchmark::run_benchmark_group;
 use benchlib::decompress_file;
 
-const TEXT_SHERLOCK: &[u8] = include_bytes!("../../data/sherlock.txt.gz");
+const TEXT_SHERLOCK: &[u8] = include_bytes!("sherlock.txt.gz");
 
 fn main() {
     let sherlock_text = String::from_utf8(decompress_file(TEXT_SHERLOCK)).expect("Invalid UTF-8");
